@@ -1,5 +1,7 @@
 #include <iostream>
 #include "temperature.h"
+#include "examples.h"
+#include "pizza.h"
 
 int main() {
     int tip = 0;
@@ -17,7 +19,7 @@ int main() {
         std::cin.clear();
 //        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore remaining input until the end of the line
 
-        // Ignore remianing input until the end of the line
+        // Ignore remaining input until the end of the line
         return 1;
 
     } else{
@@ -28,6 +30,11 @@ int main() {
         std::cout << "Temperature in Celsius is " << tempc << " degrees." << std::endl;
 
     }
+    std::cout << "Your output is :" << example();
+    pizza_code();
+    int y = 4+2 * (6/3);
+    std::cout << "The value of Y is: " << y;
+
 
     return 0;
 }

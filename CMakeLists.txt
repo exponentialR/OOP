@@ -5,4 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(OOP main.cpp
         temperature.cpp
-        temperature.h)
+        temperature.h
+        examples.cpp
+        examples.h
+        pizza.cpp
+        pizza.h
+        coinflip.cpp
+        pokedex.cpp
+)
