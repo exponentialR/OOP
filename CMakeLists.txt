@@ -12,4 +12,8 @@ add_executable(OOP main.cpp
         pizza.h
         coinflip.cpp
         pokedex.cpp
+        space.cpp
+        reference.cpp
+        reference.h
+        memory_address.cpp
 )
