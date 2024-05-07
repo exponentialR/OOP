@@ -24,6 +24,8 @@ int pizza_code(){
     std::cout << "There are " << name.length()
     << " letters in " << name << std::endl;
 
+    std::cout << "My name is Samuel";
+
     bool a = true;
     a = false;
     std::cout << a;
