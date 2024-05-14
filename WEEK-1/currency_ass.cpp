@@ -1,30 +1,35 @@
-//
-// Created by qub-hri on 13/05/24.
-//
-
-#include "currency_ass.h"
-
 #include <iostream>
-using namespace std;
+
 int main() {
-    double pesos ;
-    double reais;
-    double soles;
-    double dollars;
+    // Conversion rates
+    const double USD_TO_GBP = 0.81;
+    const double EUR_TO_GBP = 0.87;
+    const double CNY_TO_GBP = 0.11;
+    const double SGD_TO_GBP = 0.60;
+    const double MYR_TO_GBP = 0.18;
 
-    double const pesos_conv = 0.00032;
-    double const reais_conv = 0.27;
-    double const soles_conv = 0.3;
+    // Variables to hold the amount of each currency
+    double usd, eur, cny, sgd, myr;
 
-    cout << "Please Enter number of Colombian Pesos: " ;
-    cin >> pesos;
-    cout << "Please Enter number of Colombian Reais: ";
-    cin >> reais;
-    cout << "Please Enter number of Colombian Soles: " ;
-    cin >> soles;
+    // Prompt the user and read the amounts of each currency
+    std::cout << "Enter the number of US Dollars: ";
+    std::cin >> usd;
+    std::cout << "Enter the number of Euros: ";
+    std::cin >> eur;
+    std::cout << "Enter the number of Chinese Yuan: ";
+    std::cin >> cny;
+    std::cout << "Enter the number of Singapore Dollars: ";
+    std::cin >> sgd;
+    std::cout << "Enter the number of Malaysian Ringgit: ";
+    std::cin >> myr;
 
-    dollars = (pesos_conv * pesos) + (reais_conv * reais) + (soles_conv * soles);
+    // Convert each amount to GBP
+    double pounds = (usd * USD_TO_GBP) + (eur * EUR_TO_GBP) +
+                    (cny * CNY_TO_GBP) + (sgd * SGD_TO_GBP) +
+                    (myr * MYR_TO_GBP);
 
-    cout << "US Dollars = $ " << dollars;
+    // Output the total in British Pounds
+    std::cout << "Total in British Pounds = £" << pounds << std::endl;
 
+    return 0;
 }
