@@ -2,6 +2,7 @@
 // Created by vboxuser on 28/05/2024.
 //
 #include "Animal.h"
+#include <iostream>
 
 int main() {
     Animal animal1("Tiger", 5, 220.5);

@@ -6,6 +6,7 @@
 #define STUDENT_H
 
 #include <string>
+#include <iostream>
 
 class Student {
 private:
