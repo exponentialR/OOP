@@ -2,7 +2,7 @@
 // Created by Samuel Adebayo on 03/06/2024.
 //
 // Movie.cpp
-#include "Movie.h"
+#include "movie.h"
 #include <iostream>
 
 Movie::Movie() : title(""), year(-1), genre("") {}
