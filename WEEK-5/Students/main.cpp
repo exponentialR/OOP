@@ -2,7 +2,7 @@
 // Created by vboxuser on 28/05/2024.
 //
 
-#include "Student.h"
+#include "student.h"
 
 int main() {
     Student student1("Alice", 1001, 3.8);

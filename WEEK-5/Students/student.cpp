@@ -2,7 +2,7 @@
 // Created by vboxuser on 28/05/2024.
 //
 
-#include "Student.h"
+#include "student.h"
 #include <iostream>
 
 Student::Student() : name("Unknown"), id(0), gpa(0.0) {}
